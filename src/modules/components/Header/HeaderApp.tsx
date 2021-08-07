@@ -4,7 +4,7 @@ import MeetingRoomIcon from "@material-ui/icons/MeetingRoom";
 // import { Link as RouterLink } from 'react-router-dom';
 
 import {BtnNewTask} from "./Styles/BtnNewTask";
-import { BtnResumen } from './Styles/BtnResumen.js';
+import { BtnResumen } from './Styles/BtnResumen';
 
 // const history = useHistory();
 
@@ -17,12 +17,9 @@ class HeaderApp extends Component {
         <Box bgcolor=" #CCFFF1 ">
           <Grid container>
             <Grid item md={1}></Grid>
-            <Grid item md={10} bgcolor="red" alignContent="flex-end">
+            <Grid item md={9} /* bgcolor="red" alignContent="flex-end */>
               <Box bgcolor="#CCFFF1">
                 <Typography
-                  variant="h2"
-                  fontFamily="Roboto"
-                  color={"grey"}
                   align="center"
                   style={{
                     color: "#424242",
@@ -31,20 +28,17 @@ class HeaderApp extends Component {
                     fontSize: 48,
                   }}
                 >
+
                   Web's Tasks
                 </Typography>
                 {/* <Divider variant="middle" /> */}
               </Box>
             </Grid>
             <Grid
-              item
-              md={1}
-              container
-              direction="row"
-              justifyContent="center"
-              alignItems="flex-end"
+              item md={1}
+              // justifyContent="center"
             >
-              <Button absolute={true} size="large" mr={2}>
+              <Button size="large">
                 <MeetingRoomIcon
                   fontSize="large"
                   style={{ color: "#424242" }}

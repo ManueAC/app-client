@@ -43,12 +43,7 @@ export default function BasicTextFields() {
             <Typography variant="h3">New task</Typography>
           </Grid>
           <Grid container md={4} direction="row" alignContent="center">
-            <IconButton
-              className={classes.BtnIChk}
-              variant="outlined"
-              border={2}
-              borderColor="black"
-            >
+            <IconButton>
               <CheckIcon />
             </IconButton>
             <IconButton>

@@ -15,7 +15,6 @@ export const BtnResumen = () => {
     <Button
       className={classes.root}
       href="/"
-      justifyContent="center"
     >
       Resumen
     </Button>

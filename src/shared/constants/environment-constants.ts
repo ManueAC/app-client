@@ -1,2 +1,2 @@
-export const API_DOMAIN = process.env.APP_WORKSPACE_ENDPOINT as string;
+export const REACT_API_DOMAIN = process.env.REACT_APP_WORKSPACE_ENDPOINT as string;
 

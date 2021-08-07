@@ -12,7 +12,7 @@ const BtnEditT = makeStyles({
 export const Hook = () => {
   const classes = BtnEditT();
   return (
-    <Button className={classes.root} variant="button" href="/tasks/edit">
+    <Button className={classes.root} href="/tasks/edit">
       Edit Task
     </Button>
   );

@@ -21,21 +21,16 @@ const LsStyle = makeStyles({
   root: {
     paddingRight: "1.5rem",
   },
-});
+  LSize: {
 
-const generate = (element) => {
-  return [0, 1, 2].map((value) =>
-    React.cloneElement(element, {
-      key: value,
-    })
-  );
-}
+  }
+});
 
 const ResTasks = () => {
   const classes = LsStyle();
   return (
     <List>
-      {generate(
+      
         <ListItem>
           <Checkbox></Checkbox>
           <ListItemText
@@ -43,7 +38,7 @@ const ResTasks = () => {
             secondary="Worker Asignated"
             className={classes.root}
           />
-          <Typography variant="secondary" className={classes.root}>
+          <Typography className={classes.root}>
             Task Description Asigned
           </Typography>
           <IconButton>
@@ -53,7 +48,7 @@ const ResTasks = () => {
             <ClearIcon />
           </IconButton>
         </ListItem>
-      )}
+      
     </List>
   );
 };
